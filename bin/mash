@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+[
+  "bundler/setup",
+  "layer_masher",
+].map {|gem| require gem }
+
+LayerMasher::CLI.start(ARGV)
